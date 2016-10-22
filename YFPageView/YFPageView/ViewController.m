@@ -16,12 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"YFPageViewController";
+    self.titleViewBackgroundColor = [UIColor lightGrayColor];
+    self.titleButtonColorSeletced = [UIColor yellowColor];
+    self.titleButtonColorNormal = [UIColor blackColor];
+    self.lineColor = [UIColor purpleColor];
+    self.headerTitleHeight = 35;
+    self.titleArray = @[@"发",@"大道",@"大道",@"冯规范",@"腾飞公司"];
+    
+    
+    
+    ///必须调用startLayout方法,重新布局
+    [self startLayout];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
+
+
+
+
 
 @end

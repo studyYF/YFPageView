@@ -15,6 +15,9 @@
 		B8A34C411DBA4BB60019382D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A34C3F1DBA4BB60019382D /* LaunchScreen.storyboard */; };
 		B8A34C4C1DBA4BB70019382D /* YFPageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A34C4B1DBA4BB70019382D /* YFPageViewTests.m */; };
 		B8A34C571DBA4BB70019382D /* YFPageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A34C561DBA4BB70019382D /* YFPageViewUITests.m */; };
+		B8A34C671DBA4ED50019382D /* YFPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A34C661DBA4ED50019382D /* YFPageViewController.m */; };
+		B8E5947E1DBB2BF6006CAFFF /* HeaderTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E5947D1DBB2BF6006CAFFF /* HeaderTitleView.m */; };
+		B8E594811DBB2CC6006CAFFF /* UIView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E594801DBB2CC6006CAFFF /* UIView+Size.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		B8A34C521DBA4BB70019382D /* YFPageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFPageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A34C561DBA4BB70019382D /* YFPageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFPageViewUITests.m; sourceTree = "<group>"; };
 		B8A34C581DBA4BB70019382D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8A34C651DBA4ED50019382D /* YFPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFPageViewController.h; sourceTree = "<group>"; };
+		B8A34C661DBA4ED50019382D /* YFPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFPageViewController.m; sourceTree = "<group>"; };
+		B8E5947C1DBB2BF6006CAFFF /* HeaderTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderTitleView.h; sourceTree = "<group>"; };
+		B8E5947D1DBB2BF6006CAFFF /* HeaderTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderTitleView.m; sourceTree = "<group>"; };
+		B8E5947F1DBB2CC6006CAFFF /* UIView+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Size.h"; sourceTree = "<group>"; };
+		B8E594801DBB2CC6006CAFFF /* UIView+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Size.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		B8A34C301DBA4BB60019382D /* YFPageView */ = {
 			isa = PBXGroup;
 			children = (
+				B8A34C641DBA4EB90019382D /* YFPageView */,
 				B8A34C341DBA4BB60019382D /* AppDelegate.h */,
 				B8A34C351DBA4BB60019382D /* AppDelegate.m */,
 				B8A34C371DBA4BB60019382D /* ViewController.h */,
@@ -138,6 +148,19 @@
 				B8A34C581DBA4BB70019382D /* Info.plist */,
 			);
 			path = YFPageViewUITests;
+			sourceTree = "<group>";
+		};
+		B8A34C641DBA4EB90019382D /* YFPageView */ = {
+			isa = PBXGroup;
+			children = (
+				B8A34C651DBA4ED50019382D /* YFPageViewController.h */,
+				B8A34C661DBA4ED50019382D /* YFPageViewController.m */,
+				B8E5947C1DBB2BF6006CAFFF /* HeaderTitleView.h */,
+				B8E5947D1DBB2BF6006CAFFF /* HeaderTitleView.m */,
+				B8E5947F1DBB2CC6006CAFFF /* UIView+Size.h */,
+				B8E594801DBB2CC6006CAFFF /* UIView+Size.m */,
+			);
+			path = YFPageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8A34C671DBA4ED50019382D /* YFPageViewController.m in Sources */,
 				B8A34C391DBA4BB60019382D /* ViewController.m in Sources */,
+				B8E5947E1DBB2BF6006CAFFF /* HeaderTitleView.m in Sources */,
+				B8E594811DBB2CC6006CAFFF /* UIView+Size.m in Sources */,
 				B8A34C361DBA4BB60019382D /* AppDelegate.m in Sources */,
 				B8A34C331DBA4BB60019382D /* main.m in Sources */,
 			);
@@ -496,6 +522,7 @@
 				B8A34C5D1DBA4BB70019382D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8A34C5E1DBA4BB70019382D /* Build configuration list for PBXNativeTarget "YFPageViewTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +531,7 @@
 				B8A34C601DBA4BB70019382D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8A34C611DBA4BB70019382D /* Build configuration list for PBXNativeTarget "YFPageViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +540,7 @@
 				B8A34C631DBA4BB70019382D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
