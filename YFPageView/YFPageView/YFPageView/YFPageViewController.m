@@ -34,6 +34,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     self.headerTitleHeight = 40;
 }
 
@@ -50,10 +51,10 @@
 }
 
 #pragma mark -- HeaderTitleViewDelegate
-- (void)seletcedTitle:(NSInteger)index
+- (void)seletcedTitle:(NSInteger)index direction:(UIPageViewControllerNavigationDirection)direction
 {
     //如果不需要一直左右滑动,可以在这里修改direction参数
-    [self.pageViewController setViewControllers:@[self.vcArray[index]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    [self.pageViewController setViewControllers:@[self.vcArray[index]] direction:direction animated:YES completion:nil];
 }
 
 #pragma mark -- UIPageViewControllerDataSource

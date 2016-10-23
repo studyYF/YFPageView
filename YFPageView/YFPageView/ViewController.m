@@ -22,7 +22,7 @@
     self.titleButtonColorNormal = [UIColor blackColor];
     self.lineColor = [UIColor purpleColor];
     self.headerTitleHeight = 35;
-    self.titleArray = @[@"发",@"大道",@"大道",@"冯规范",@"腾飞公司"];
+    self.titleArray = @[@"发",@"大道",@"大道",@"冯规范",@"腾飞公司",@"大道第六空间发;来得及发卡的就",@"大道",@"冯规范"];
     
     
     

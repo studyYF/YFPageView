@@ -19,7 +19,7 @@
 /**
  *  选中了某个title
  */
-- (void)seletcedTitle:(NSInteger)index;
+- (void)seletcedTitle:(NSInteger)index direction:(UIPageViewControllerNavigationDirection)direction;
 
 @end
 
