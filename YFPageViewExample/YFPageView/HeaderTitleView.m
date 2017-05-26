@@ -10,6 +10,7 @@
 
 #import "HeaderTitleView.h"
 #import "UIView+Size.h"
+#import <UIKit/UIKit.h>
 
 static CGFloat const margin = 30;
 

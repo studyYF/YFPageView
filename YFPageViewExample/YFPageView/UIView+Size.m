@@ -7,6 +7,7 @@
 //
 
 #import "UIView+Size.h"
+#import <UIKit/UIKit.h>
 
 @implementation UIView (Size)
 -(void)setYf_x:(CGFloat)yf_x

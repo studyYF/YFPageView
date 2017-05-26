@@ -10,6 +10,7 @@
 
 #import "YFPageViewController.h"
 #import "UIView+Size.h"
+#import <UIKit/UIKit.h>
 
 
 @interface YFPageViewController ()<UIPageViewControllerDataSource,UIPageViewControllerDelegate,HeaderTitleViewDelegate>
